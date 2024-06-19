@@ -1,4 +1,5 @@
 import AchievementCounter from "@/components/home/AchievementCounter";
+import CTA from "@/components/home/CTA";
 import Despre from "@/components/home/Despre";
 import Hero from "@/components/home/Hero";
 import Reviews from "@/components/home/Reviews";
@@ -10,6 +11,7 @@ export default function Home() {
       <Despre />
       <AchievementCounter />
       <Reviews />
+      <CTA />
     </>
   );
 }

@@ -1,0 +1,47 @@
+"use client";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Send } from "lucide-react";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/variants";
+
+const CTA = () => {
+  return (
+    <section className="mb-44 bg-grainy py-24">
+      <div className="container mx-auto">
+        <div className="flex flex-col items-center">
+          <motion.h2
+            variants={fadeIn("down", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, ammount: 0.4 }}
+            className="mb-6 flex  flex-col items-center justify-center gap-y-2 text-center"
+          >
+            <span className="max-w-3xl">Începe-ți călătoria spirituală</span>
+            <span className="text-3xl font-medium w-full">
+              Programează o sesiune cu Edera Sierra și descoperă-ți destinul
+            </span>
+          </motion.h2>
+          <motion.div
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, ammount: 0.4 }}
+          >
+            <Link href="/contact">
+              <Button className="gap-x-2 group">
+                Descoperă destinul{" "}
+                <Send
+                  size={18}
+                  className="transition-all ease-in-out duration-300 group-hover:rotate-[20deg]"
+                />
+              </Button>
+            </Link>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CTA;
