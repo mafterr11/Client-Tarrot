@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply tracking-[1px] text-white;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply tracking-[1px];
+  }
+
+  h1 {
+    @apply text-[26px]  font-bold md:text-[32px] lg:text-[37px] xl:text-[55px] xl:leading-[85px] 2xl:text-[65px];
+  }
+  h2 {
+    @apply text-[25px] font-medium md:text-[27px] lg:text-[34px] xl:text-[38px] 2xl:text-[40px];
+  }
+  h3 {
+    @apply text-[22px] font-medium leading-[47px] md:text-[26px] lg:text-[28px] 2xl:text-[30px];
+  }
+  h4 {
+    @apply text-[18px] font-medium md:text-[22px] lg:text-[27px] xl:text-[22px] 2xl:text-[23px];
+  }
+  h5 {
+    @apply font-semibold 2xl:text-[21px];
+  }
+  p {
+    @apply text-[16px] font-normal leading-[32spx] text-white md:text-[18px] lg:text-[22px] xl:text-[16px] 2xl:text-[18px];
+  }
+  a {
+    @apply cursor-pointer transition-all duration-300;
+  }
+  .nav-text {
+    @apply font-normal xl:text-[18px];
+  }
+}
+
+/* Nav hover */
+.hover:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.hover span {
+  display: inline-block;
+}
+
+.hover span:after {
+  content: "";
+  width: 0px;
+  height: 4px;
+  display: block;
+  background: #e4b373;
+  transition: 300ms;
+}
+
+.hover span:hover:after {
+  width: 100%;
+}
+
+/* Normal hover */
+.hover-nav:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.hover-nav span {
+  display: inline-block;
+}
+
+.hover-nav span:after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #e4b373;
+  transition: 300ms;
+}
+
+.hover-nav span:hover:after {
+  width: 100%;
+}
+
+.active-link {
+  text-decoration: underline;
+  text-decoration-color: #e4b373;
+  text-decoration-thickness: 4px;
+}
