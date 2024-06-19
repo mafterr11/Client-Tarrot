@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Despre = () => {
   return (
-    <section className="container py-[5rem] md:py-[12rem] md:max-xl:max-w-[90%]">
+    <section className="container py-[5rem] md:py-[12rem] md:max-xl:max-w-[90%] overflow-x-hidden">
       <div>
         <motion.div
           variants={fadeIn("down", 0.4)}

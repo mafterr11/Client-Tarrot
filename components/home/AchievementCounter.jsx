@@ -16,11 +16,11 @@ const AchievementCounter = () => {
       whileInView={"show"}
       viewport={{ once: true, ammount: 0.4 }}
       ref={ref}
-      className="flex w-full items-center justify-center py-[6rem]"
+      className="flex w-full items-center justify-center py-12 md:py-[6rem]"
     >
       {/* container */}
-      <div className="flex flex-col justify-evenly items-center gap-y-12 lg:flex-row xl:gap-y-20 w-screen">
-        <div className="">
+      <div className="flex flex-col justify-evenly items-center gap-y-20 lg:flex-row w-screen">
+        <div >
           <div className="flex items-end text-3xl lg:text-[2.8rem] xl:pt-4">
             <CountUp start={0} end={inView ? 20 : 0} duration={5} />+
             <div className="ml-[3px] max-w-[150px] text-lg font-bold uppercase leading-[1.4] tracking-[1px] text-accent lg:text-base xl:max-w-[200px] xl:text-3xl xl:leading-[1]">
@@ -31,7 +31,7 @@ const AchievementCounter = () => {
             Experiența
           </div>
         </div>
-        <div className="">
+        <div >
           <div className="text-3xl lg:text-[2.8rem] mb-2">
             <CountUp start={0} end={inView ? 10584 : 0} duration={5} />+
           </div>
@@ -39,7 +39,7 @@ const AchievementCounter = () => {
             Clienți mulțumiți
           </div>
         </div>
-        <div className="">
+        <div >
           <div className="text-3xl lg:text-[2.8rem] mb-2">
             <CountUp start={0} end={inView ? 6 : 0} duration={5} />+
           </div>

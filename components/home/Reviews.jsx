@@ -11,7 +11,7 @@ const Reviews = () => {
       icon: "/reviews/alex.jpeg",
     },
     {
-      text: "Am apelat la ea într-o perioadă dificilă și, datorită ei, am reușit să îmi recâștig încrederea și să găsesc soluții la problemele mele. Mi-ai schimbat viața în bine!",
+      text: "Am apelat la ea într-o perioadă dificilă și, datorită ei, am reușit să îmi recâștig încrederea și să găsesc soluții la problemele mele. Mi-ai schimbat viața în bine, îți multumesc incă odată.",
       nume: "Ioana",
       icon: "/reviews/ioana.jpeg",
     },
@@ -57,7 +57,7 @@ const Reviews = () => {
             className="p-4"
             key={index}
           >
-            <div className="h-full bg-orange-50 p-8 rounded grid grid-cols-subgrid hover:-translate-y-2 hover:scale-[1.02] transition-all ease-in-out duration-500">
+            <div className="h-[400px] bg-orange-50 p-8 rounded grid grid-cols-subgrid hover:-translate-y-2 hover:scale-[1.02] transition-all ease-in-out duration-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
