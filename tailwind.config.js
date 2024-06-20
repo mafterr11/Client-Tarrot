@@ -18,6 +18,10 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        xs: "390px",
+        "2xl": "1400px",
+      },
       colors: {
         accent: {
           // e4b373

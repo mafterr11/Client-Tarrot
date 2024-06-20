@@ -41,7 +41,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
           isMenuOpen ? "right-0" : "-right-full"
         } fixed bottom-0 top-0 z-50 h-screen w-full border-l-2 border-accent bg-[#191919] px-8 transition-all duration-500`}
       >
-        <div className="flex h-full flex-col items-center justify-between xs:pt-24 xs:pb-20 text-white pt-16 pb-12">
+        <div className="xs:pt-24 xs:pb-20 flex h-full flex-col items-center justify-between pb-12 pt-16 text-white">
           {/* close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
@@ -54,7 +54,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             <Logo source={"/header-mobile2.png"} size={"h-[3.75rem]"} />
           </div>
           {/* links */}
-          <div className="flex flex-col gap-y-8 xs:gap-y-12">
+          <div className="xs:gap-y-12 flex flex-col gap-y-8">
             {links.map((link, index) => {
               return (
                 <Link
