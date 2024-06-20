@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import { fadeIn } from "@/variants";
-import { CheckCheck } from "lucide-react";
+import { CheckCheck, PhoneCallIcon } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -14,7 +14,7 @@ const Servicii = () => {
         viewport={{ once: true, ammount: 0.6 }}
       >
         <h2 className="text-2xl font-bold mb-6">Probleme tratate de ea:</h2>
-        <ul className="list-none space-y-2 text-lg ">
+        <ul className="list-none space-y-4 text-lg ">
           <li className="flex items-center gap-x-3">
             <CheckCheck color="#e4b373" /> Dezleagă farmece
           </li>
@@ -75,6 +75,14 @@ const Servicii = () => {
         <h3 className="text-xl font-bold mb-4">
           Contactează-mă în privat si haide sa colaborăm!
         </h3>
+        <a
+          href="tel:+40727585558"
+          target="blank"
+          className="flex self-start items-center justify-center gap-x-2 mb-4"
+        >
+          <PhoneCallIcon size={24} /> Telefon:{" "}
+          <span className="text-accent font-bold">+40 727 585 558</span>
+        </a>
         <img
           src="/8.jpg"
           alt="Danusia Florica"
