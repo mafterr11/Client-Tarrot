@@ -7,7 +7,7 @@ import { fadeIn } from "@/variants";
 
 const CTA = () => {
   return (
-    <section className="xs:py-24 relative mb-12 bg-CTA bg-fixed bg-[bottom_-34rem_center] bg-no-repeat py-12 xl:bg-[bottom_-45rem_center]">
+    <section className="xs:py-24 relative mb-12 bg-CTA bg-[bottom_-50rem_center] xs:bg-[bottom_-45rem_center] bg-no-repeat py-12 xl:bg-[bottom_-45rem_center]">
       <div className="absolute inset-0 bg-black/30" />
       <div className="container relative mx-auto">
         <div className="flex flex-col items-center">

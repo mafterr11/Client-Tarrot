@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="border-t-2 border-accent bg-[#0f0f0f] py-4">
       <div className="relative flex flex-col items-center justify-between gap-y-4 px-20 xl:flex-row">
         {/* Logo */}
-        <Link href="/" className="flex items-center justify-center gap-x-2">
+        <Link href="/" className="md:flex items-center justify-center gap-x-2 hidden">
           <Image src="/logo.png" width={100} height={100} alt="Logo" />
           <h4 className="flex flex-col items-center justify-center -space-y-2 font-bold leading-7 text-accent">
             Edera Sierra Astromagie
