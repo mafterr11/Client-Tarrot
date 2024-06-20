@@ -7,8 +7,9 @@ import { fadeIn } from "@/variants";
 
 const CTA = () => {
   return (
-    <section className="mb-44 bg-grainy py-24">
-      <div className="container mx-auto">
+    <section className="relative mb-12 bg-CTA py-24 bg-fixed bg-[bottom_-32rem_center]">
+      <div className="bg-black/30 absolute inset-0"/>
+      <div className="relative container mx-auto">
         <div className="flex flex-col items-center">
           <motion.h2
             variants={fadeIn("down", 0.5)}

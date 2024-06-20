@@ -27,7 +27,7 @@ const ContactInfo = () => {
         </div>
         <div className="w-full max-w-md">
           <img
-            src="/hero-img.jpg"
+            src="/5.jpg"
             alt="Edera Sierra"
             className="w-full rounded-lg shadow-lg"
           />

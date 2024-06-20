@@ -19,7 +19,7 @@ const FAQ = () => {
         viewport={{ once: true, ammount: 0.4 }}
       >
         <Image
-          src="/about-img.jpg"
+          src="/1.jpg"
           alt="About image"
           width={600}
           height={600}
@@ -89,7 +89,7 @@ const FAQ = () => {
         viewport={{ once: true, ammount: 0.4 }}
       >
         <Image
-          src="/about-img2.jpg"
+          src="/2.jpg"
           alt="About image"
           width={600}
           height={600}

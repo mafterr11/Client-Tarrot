@@ -6,7 +6,45 @@ import Link from "next/link";
 
 const Despre = () => {
   return (
-    <section className="container py-[5rem] md:py-[12rem] md:max-xl:max-w-[90%] overflow-x-hidden">
+    <section className="w-[95%] mx-auto md:container py-[5rem] md:py-[8rem] md:max-xl:max-w-[90%] overflow-x-hidden">
+      {/* Under hero */}
+      <div>
+        <p className="text-[25px] text-center mb-14">
+          Edera Sierra este{" "}
+          <span className="text-white bg-accent p-[1px] rounded-sm">
+            singura cu adevărat acceptată de BISERICĂ
+          </span>{" "}
+          pentru a dezlega oamenii de farmece și blesteme.
+        </p>
+        <div className="flex items-center justify-center max-md:flex-col gap-x-20 max-md:gap-y-20">
+          <Image
+            src="/7.jpg"
+            width={500}
+            height={500}
+            alt="hero image"
+            className="rounded-md"
+          />
+          <Image
+            src="/10.jpg"
+            width={500}
+            height={500}
+            alt="hero image"
+            className="rounded-md"
+          />
+        </div>
+        <p className="text-[20px] text-center my-14">
+          Făcătoarea de minuni Edera Sierra vă poate ajuta în orice problemă
+          dacă aveți speranță și încredere deplină. O să reușiți să treceți
+          peste toate necazurile din viața dumneavoastră. Încă de la naștere{" "}
+          <span className="bg-accent p-[1px] rounded-sm text-white">
+            am fost aleasă de Dumnezeu
+          </span>{" "}
+          și binecuvântată cu HAR SFÂNT, trimisă pentru a face bine. Edera
+          Sierra este singura tămăduitoare din lume ce deține CARTEA MAGIEI
+          ALBE, care conține cele mai puternice descântece pentru dragoste,
+          noroc, sănătate și dezlegări de farmece, vrăji și blesteme.
+        </p>
+      </div>
       <div>
         <motion.div
           variants={fadeIn("down", 0.4)}
@@ -34,7 +72,7 @@ const Despre = () => {
           viewport={{ once: true, ammount: 0.4 }}
         >
           <Image
-            src="/about.jpg"
+            src="/3.jpg"
             width={800}
             height={800}
             alt="about section"

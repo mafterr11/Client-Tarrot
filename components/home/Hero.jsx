@@ -55,7 +55,7 @@ const Hero = () => {
         className="z-30 hidden md:flex md:pt-24"
       >
         <Image
-          src="/hero-img.jpg"
+          src="/5.jpg"
           width={500}
           height={500}
           alt="Hero Astromagie Edera Sierra"
