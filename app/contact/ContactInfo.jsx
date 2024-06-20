@@ -32,7 +32,7 @@ const ContactInfo = () => {
             abilități extraordinare, care poate schimba destinul dumneavoastră
             în bine.
           </p>
-          <Socials containerStyles="max-md:flex-col items-center justify-center gap-y-4 py-4" />
+          <Socials linkStyles="text-xl" containerStyles="max-md:flex-col items-center justify-center gap-y-4 py-4" />
         </div>
         <div className="w-full max-w-md">
           <img
