@@ -76,7 +76,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             })}
           </div>
           {/* bottom part */}
-          <div className="flex items-center justify-center gap-x-7 pb-8 md:pb-16 lg:pb-24 xl:pb-32">
+          <div className="flex items-center justify-center gap-x-7 pb-8">
             <Socials linkStyles="xs:text-xl" containerStyles="flex-col gap-y-2" />
           </div>
         </div>
