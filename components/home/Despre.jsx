@@ -49,28 +49,28 @@ const Despre = () => {
           className="flex max-w-2xl flex-col gap-y-8 xl:gap-y-[54px]"
         >
           <p>
-            <span className="text-accent">&#9679;</span>{" "}
+            <span className="text-accent">&#9679;</span> Sunt expertă în{" "}
             <span className="bg-accent px-1 font-semibold text-white rounded-sm">
-              Edera Sierra
-            </span>{" "}
-            este expertă în arta vindecării spirituale și a tarotului,
-            ajutându-te să îți descoperi potențialul și să depășești provocările
-            vieții. Cu o abordare blândă și plină de înțelegere, Edera oferă
-            servicii personalizate pentru a-ți aduce liniște și claritate.
+              arta vindecării spirituale și a tarotului
+            </span>
+            , și mă dedic să te ajut să îți descoperi potențialul și să
+            depășești provocările vieții. Cu o abordare blândă și plină de
+            înțelegere, ofer servicii personalizate pentru a-ți aduce liniște și
+            claritate.
           </p>
           <p>
             <span className="text-accent">&#9679;</span> Indiferent de
-            obstacolele cu care te confrunți, Edera este aici să te ajute să
-            găsești lumina și pacea interioară.
+            obstacolele cu care te confrunți, sunt aici să te ajut să găsești
+            lumina și pacea interioară.
           </p>
           <p>
             {" "}
-            <span className="text-accent">&#9679;</span> Edera este cunoscută
-            pentru abilitatea sa de a combina înțelepciunea străveche a
-            tarotului cu tehnici moderne de vindecare spirituală, creând astfel
-            o experiență transformatoare pentru fiecare client. Fiecare sesiune
-            cu Edera este unică, adaptată nevoilor și circumstanțelor
-            individuale, asigurându-se că primești exact ceea ce ai nevoie
+            <span className="text-accent">&#9679;</span> Sunt cunoscută pentru
+            abilitatea mea de a combina înțelepciunea străveche a tarotului cu
+            tehnici moderne de vindecare spirituală, creând astfel o experiență
+            transformatoare pentru fiecare client. Fiecare sesiune pe care o
+            ofer este unică, adaptată nevoilor și circumstanțelor tale
+            individuale, asigurându-mă că primești exact ceea ce ai nevoie
             pentru a progresa pe calea ta spirituală.
           </p>
           <p className="flex flex-col items-start gap-y-2">

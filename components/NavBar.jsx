@@ -7,7 +7,7 @@ const NavBar = ({ linkStyles, containerStyles }) => {
   const links = [
     {
       path: "/",
-      name: "Acasa",
+      name: "Acasă",
     },
     {
       path: "/despre-mine",
@@ -30,7 +30,7 @@ const NavBar = ({ linkStyles, containerStyles }) => {
               currentRoute === link.path
                 ? "font-semibold underline decoration-accent decoration-4 underline-offset-[1.6rem] active-link"
                 : "hover"
-            } text-base capitalize`}
+            } text-base`}
           >
             <span>{link.name}</span>
           </Link>

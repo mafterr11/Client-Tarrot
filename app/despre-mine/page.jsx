@@ -1,9 +1,9 @@
 import React from 'react'
 
-const page = () => {
+const DespreMine = () => {
   return (
-    <div>page</div>
+    <div>DespreMine</div>
   )
 }
 
-export default page
+export default DespreMine
