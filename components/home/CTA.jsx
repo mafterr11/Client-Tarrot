@@ -15,10 +15,11 @@ const CTA = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="mb-6 flex  flex-col items-center justify-center gap-y-2 text-center"
+            className="mb-6 flex  flex-col items-center justify-center gap-y-2 text-center  w-full"
           >
-            <span className="max-w-3xl">Începe-ți călătoria spirituală</span>
-            <span className="text-3xl font-medium w-full">
+            <span className="">
+            Sunteți gata să începeți călătoria spirituală?</span>
+            <span className="text-3xl font-medium">
               Programează o sesiune cu Edera Sierra și descoperă-ți destinul
             </span>
           </motion.h2>

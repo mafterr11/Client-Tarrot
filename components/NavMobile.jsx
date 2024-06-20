@@ -5,21 +5,24 @@ import { IoCloseOutline } from "react-icons/io5";
 import { RiMenu2Line } from "react-icons/ri";
 import Logo from "./Logo";
 import Socials from "./Socials";
-import { Dumbbell, Home } from "lucide-react";
+import Image from "next/image";
 
 const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
   const links = [
     {
       path: "/",
       name: "Acasa",
+      icon: "/nav-home.png",
     },
     {
-      path: "/despre-mine",
-      name: "Despre mine",
+      path: "/despre",
+      name: "Despre",
+      icon: "/nav-card.png",
     },
     {
       path: "/contact",
       name: "Contact",
+      icon: "/nav-globe.png",
     },
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +41,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
           isMenuOpen ? "right-0" : "-right-full"
         } fixed bottom-0 top-0 z-50 h-screen w-full border-l-2 border-accent bg-[#191919] px-8 transition-all duration-500`}
       >
-        <div className="flex h-full flex-col items-center justify-between text-white pt-12 pb-16">
+        <div className="flex h-full flex-col items-center justify-between text-white pt-12">
           {/* close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
@@ -60,15 +63,21 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
                   className="justify-base hover:text-orange flex items-center gap-x-3"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <div className={`${iconStyles}`}>{link.icon}</div>
+                  <Image
+                    src={link.icon}
+                    height={50}
+                    width={50}
+                    className={`${iconStyles}`}
+                    alt="butoane navigatia mobila"
+                  />
                   <div className={`${linkStyles}`}>{link.name}</div>
                 </Link>
               );
             })}
           </div>
           {/* bottom part */}
-          <div className="flex items-center justify-center gap-x-7 pb-2">
-            <Socials />
+          <div className="flex items-center justify-center gap-x-7 pb-8">
+            <Socials containerStyles="flex-col gap-y-2"/>
           </div>
         </div>
       </aside>

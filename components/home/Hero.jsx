@@ -39,9 +39,9 @@ const Hero = () => {
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
         >
-          <Link href="/contact">
+          <Link href="/despre">
             <Button>
-              <span>Contactează-mă</span>
+              <span>Află mai multe</span>
             </Button>
           </Link>
         </motion.div>

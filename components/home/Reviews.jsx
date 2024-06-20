@@ -58,7 +58,7 @@ const Reviews = () => {
             key={index}
           >
             {/* 634319 */}
-            <div className="h-[400px] bg-[#c08332] p-8 rounded grid grid-cols-subgrid hover:-translate-y-2 hover:scale-[1.02] transition-all ease-in-out duration-500">
+            <div className="h-[430px] md:max-xl:w-[80%] md:max-xl:mx-auto bg-[#c08332] p-8 rounded grid grid-cols-subgrid hover:-translate-y-2 hover:scale-[1.02] transition-all ease-in-out duration-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"

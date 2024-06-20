@@ -12,11 +12,11 @@ const Header = () => {
         <div className="flex items-center justify-center">
           <NavBar containerStyles="hidden xl:flex gap-x-12 mr-20" />
           <a
-              href="tel:+40741220774"
+              href="tel:+40727585558"
               target="blank"
               className="flex items-center justify-center gap-x-2 max-md:hidden"
             >
-               <PhoneCallIcon size={24}/> Telefon: <span className="text-accent font-bold">+40 765 123 456  </span>
+               <PhoneCallIcon size={24}/> Telefon: <span className="text-accent font-bold">+40 727 585 558</span>
             </a>
         </div>
         <NavMobile

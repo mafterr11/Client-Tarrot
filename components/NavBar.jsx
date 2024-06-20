@@ -10,8 +10,8 @@ const NavBar = ({ linkStyles, containerStyles }) => {
       name: "Acasă",
     },
     {
-      path: "/despre-mine",
-      name: "Despre mine",
+      path: "/despre",
+      name: "Despre",
     },
     {
       path: "/contact",
