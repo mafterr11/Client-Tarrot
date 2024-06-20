@@ -41,7 +41,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
           isMenuOpen ? "right-0" : "-right-full"
         } fixed bottom-0 top-0 z-50 h-screen w-full border-l-2 border-accent bg-[#191919] px-8 transition-all duration-500`}
       >
-        <div className="flex h-full flex-col items-center justify-between pt-12 text-white">
+        <div className="flex h-full flex-col items-center justify-evenly pt-12 text-white">
           {/* close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
@@ -50,7 +50,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             <IoCloseOutline />
           </div>
           {/* logo */}
-          <div onClick={() => setIsMenuOpen(false)} className="mt-3">
+          <div onClick={() => setIsMenuOpen(false)} className="mt-3 container">
             <Logo source={"/header-mobile2.png"} size={"h-[3.75rem]"} />
           </div>
           {/* links */}
@@ -76,8 +76,11 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             })}
           </div>
           {/* bottom part */}
-          <div className="flex items-center justify-center gap-x-7 pb-8 md:pb-16 lg:pb-24 xl:pb-32">
-            <Socials linkStyles="xs:text-xl" containerStyles="flex-col gap-y-2" />
+          <div className="flex items-center justify-center gap-x-7 pb-8">
+            <Socials
+              linkStyles="xs:text-xl"
+              containerStyles="flex-col gap-y-2"
+            />
           </div>
         </div>
       </aside>
