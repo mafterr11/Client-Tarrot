@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Intro from "./Intro";
 
 const DespreMine = () => {
   return (
-    <div>DespreMine</div>
-  )
-}
+    <>
+      <Intro />
+    </>
+  );
+};
 
-export default DespreMine
+export default DespreMine;

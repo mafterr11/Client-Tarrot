@@ -46,32 +46,35 @@ const Despre = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className="flex max-w-2xl flex-col gap-y-8 xl:gap-y-[54px]"
+          className="flex max-w-2xl flex-col gap-y-8 xl:gap-y-8"
         >
           <p>
-            <span className="text-accent">&#9679;</span> Sunt expertă în{" "}
-            <span className="bg-accent px-1 font-semibold text-white rounded-sm">
-              arta vindecării spirituale și a tarotului
-            </span>
-            , și mă dedic să te ajut să îți descoperi potențialul și să
-            depășești provocările vieții. Cu o abordare blândă și plină de
-            înțelegere, ofer servicii personalizate pentru a-ți aduce liniște și
-            claritate.
+            <span className="text-accent">&#9679;</span> Viața este valoare
+            supremă și ai obligația să o trăiești chiar dacă te afli într-un
+            mare impas.
           </p>
           <p>
-            <span className="text-accent">&#9679;</span> Indiferent de
-            obstacolele cu care te confrunți, sunt aici să te ajut să găsești
-            lumina și pacea interioară.
+            <span className="text-accent">&#9679;</span> Vrajitoarea Edera
+            Sierra este ajutorul și speranța tuturor celor care au probleme și
+            necazuri. Sierra, premiată cu Globul Magic🪄🔮 pentru sutele de
+            cazuri dificile rezolvate cu succes, este cunoscătoarea celor mai
+            puternice ritualuri de magie albă, deținătoarea tainelor în
+            astrologie, chiromanție și parapsihologie.
+          </p>
+          <p>
+            <span className="text-accent">&#9679;</span> Cu sute de cazuri
+            încheiate cu succes, aceste două mâini miraculoase aduc în viața
+            oamenilor rezolvarea problemelor. Ceea ce alții nu au reușit să
+            facă, ea a realizat, oferind soluții și ajutor acolo unde alții au
+            eșuat.
           </p>
           <p>
             {" "}
             <span className="text-accent">&#9679;</span> Sunt cunoscută pentru
-            abilitatea mea de a combina înțelepciunea străveche a tarotului cu
-            tehnici moderne de vindecare spirituală, creând astfel o experiență
-            transformatoare pentru fiecare client. Fiecare sesiune pe care o
-            ofer este unică, adaptată nevoilor și circumstanțelor tale
-            individuale, asigurându-mă că primești exact ceea ce ai nevoie
-            pentru a progresa pe calea ta spirituală.
+            abilitatea mea de a combina înțelepciunea tarotului cu tehnici
+            moderne de vindecare spirituală. Fiecare sesiune este adaptată
+            nevoilor tale individuale, asigurându-mă că primești exact ceea ce
+            ai nevoie pentru a progresa spiritual.
           </p>
           <p className="flex flex-col items-start gap-y-2">
             <span className="mb-4">
