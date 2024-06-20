@@ -5,13 +5,13 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <section className=" text-white py-32 max-md:container xl:container mx-auto px-6">
+    <section className="mx-auto px-6 py-32 text-white max-md:container xl:container">
       <motion.h1
         variants={fadeIn("down", 0.2)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, ammount: 0.4 }}
-        className="text-center mb-20 xl:mb-40"
+        className="mb-20 text-center xl:mb-40"
       >
         Despre mine
       </motion.h1>
@@ -30,7 +30,7 @@ const Intro = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="text-3xl font-bold mb-6"
+            className="mb-6 text-3xl font-bold"
           >
             <span className="text-accent">ATESTATĂ</span> și{" "}
             <span className="text-accent">ACREDITATĂ</span> în domeniul
@@ -41,7 +41,7 @@ const Intro = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="text-lg mb-14"
+            className="mb-14 text-lg"
           >
             Vă ofer consultație și tarot pentru a vă lumina calea spre bine cu
             informații din trecut, prezent și viitor
@@ -51,7 +51,7 @@ const Intro = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="text-lg mb-14"
+            className="mb-14 text-lg"
           >
             Cu cabinete atât în România, cât și în Europa, făcătoarea de minuni
             Edera Sierra vă poate ajuta în orice problemă dacă aveți speranță și
@@ -65,18 +65,18 @@ const Intro = () => {
             dezlega oamenii de farmece și blesteme.
           </motion.p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
           <motion.div
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="relative text-center p-6 bg-[#c08332] h-[350px] grid-cols-subgrid grid rounded-lg"
+            className="relative grid h-[350px] grid-cols-subgrid rounded-lg bg-[#c08332] p-6 text-center"
           >
-            <div className="absolute inset-0 text-black/10 z-0 text-5xl flex items-center justify-center text-[20rem]">
+            <div className="absolute inset-0 z-0 flex items-center justify-center text-5xl text-[20rem] text-black/10">
               01
             </div>
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="mb-2 text-xl font-semibold">
               Ghidare personală și dezvoltare spirituală
             </h3>
             <p>
@@ -90,12 +90,12 @@ const Intro = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="relative text-center p-6 bg-[#c08332] h-[350px] grid-cols-subgrid grid rounded-lg"
+            className="relative grid h-[350px] grid-cols-subgrid rounded-lg bg-[#c08332] p-6 text-center"
           >
-            <div className="absolute inset-0 text-black/10 z-0 text-5xl flex items-center justify-center text-[20rem]">
+            <div className="absolute inset-0 z-0 flex items-center justify-center text-5xl text-[20rem] text-black/10">
               02
             </div>
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="mb-2 text-xl font-semibold">
               Asistență de la distanță
             </h3>
             <p>
@@ -109,12 +109,12 @@ const Intro = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="relative text-center p-6 bg-[#c08332] h-[350px] grid-cols-subgrid grid rounded-lg"
+            className="relative grid h-[350px] grid-cols-subgrid rounded-lg bg-[#c08332] p-6 text-center"
           >
-            <div className="absolute inset-0 text-black/10 z-0 text-5xl flex items-center justify-center text-[20rem]">
+            <div className="absolute inset-0 z-0 flex items-center justify-center text-5xl text-[20rem] text-black/10">
               03
             </div>
-            <h3 className="text-xl font-semibold mb-2">Puteri inegalabile</h3>
+            <h3 className="mb-2 text-xl font-semibold">Puteri inegalabile</h3>
             <p>
               Este considerată una dintre cele mai puternice și bine-știutoare
               în ceea ce privește leacurile și licorile din întreaga lume.

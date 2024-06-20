@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   Accordion,
   AccordionContent,
@@ -11,7 +11,7 @@ import { fadeIn } from "@/variants";
 
 const FAQ = () => {
   return (
-    <section className="py-12 pb-40 flex items-center max-xl:flex-col max-md:gap-y-6 md:max-xl:gap-y-20 justify-center max-w-[90%] xl:max-w-[80%] mx-auto">
+    <section className="mx-auto flex max-w-[90%] items-center justify-center py-12 pb-40 max-xl:flex-col max-md:gap-y-6 md:max-xl:gap-y-20 xl:max-w-[80%]">
       <motion.div
         variants={fadeIn("down", 0.2)}
         initial="hidden"
@@ -31,7 +31,7 @@ const FAQ = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, ammount: 0.4 }}
-        className="max-md:container xl:container mx-auto px-0"
+        className="mx-auto px-0 max-md:container xl:container"
       >
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">

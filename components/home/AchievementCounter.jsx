@@ -19,20 +19,20 @@ const AchievementCounter = () => {
       className="flex w-full items-center justify-center py-12 md:py-[6rem]"
     >
       {/* container */}
-      <div className="flex flex-col justify-evenly items-center gap-y-20 lg:flex-row w-screen">
-        <div >
+      <div className="flex w-screen flex-col items-center justify-evenly gap-y-20 lg:flex-row">
+        <div>
           <div className="flex items-end text-3xl lg:text-[2.8rem] xl:pt-4">
             <CountUp start={0} end={inView ? 20 : 0} duration={5} />+
             <div className="ml-[3px] max-w-[150px] text-lg font-bold uppercase leading-[1.4] tracking-[1px] text-accent lg:text-base xl:max-w-[200px] xl:text-3xl xl:leading-[1]">
               Ani
             </div>
           </div>
-          <div className="max-w-[150px] text-lg font-bold uppercase tracking-[1px] text-accent lg:text-base xl:max-w-[200px] xl:text-xl xl:text-[22px]">
+          <div className="max-w-[150px] text-lg font-bold uppercase tracking-[1px] text-accent lg:text-base xl:max-w-[200px] xl:text-[22px] xl:text-xl">
             Experiența
           </div>
         </div>
         <div className="max-md:pl-6">
-          <div className="text-3xl lg:text-[2.8rem] mb-2">
+          <div className="mb-2 text-3xl lg:text-[2.8rem]">
             <CountUp start={0} end={inView ? 10584 : 0} duration={5} />+
           </div>
           <div className="max-w-[150px] text-lg font-bold uppercase leading-[1.4] tracking-[1px] text-accent lg:text-base xl:max-w-[200px] xl:text-xl">
@@ -40,7 +40,7 @@ const AchievementCounter = () => {
           </div>
         </div>
         <div className="max-md:pl-6">
-          <div className="text-3xl lg:text-[2.8rem] mb-2">
+          <div className="mb-2 text-3xl lg:text-[2.8rem]">
             <CountUp start={0} end={inView ? 6 : 0} duration={5} />+
           </div>
           <div className="max-w-[150px] text-lg font-bold uppercase leading-[1.4] tracking-[1px] text-accent lg:text-base xl:max-w-[200px] xl:text-xl">

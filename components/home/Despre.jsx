@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Despre = () => {
   return (
-    <section className="w-[95%] mx-auto md:container py-[5rem] md:py-[8rem] md:max-xl:max-w-[90%] overflow-x-hidden">
+    <section className="mx-auto w-[95%] overflow-x-hidden py-[5rem] md:container md:py-[8rem] md:max-xl:max-w-[90%]">
       {/* Under hero */}
       <div>
         <motion.p
@@ -14,15 +14,15 @@ const Despre = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className="text-[25px] text-center mb-14"
+          className="mb-14 text-center text-[25px]"
         >
           Edera Sierra este{" "}
-          <span className="text-white bg-accent p-[1px] rounded-sm">
+          <span className="rounded-sm bg-accent p-[1px] text-white">
             singura cu adevărat acceptată de BISERICĂ
           </span>{" "}
           pentru a dezlega oamenii de farmece și blesteme.
         </motion.p>
-        <div className="flex items-center justify-center max-md:flex-col gap-x-20 max-md:gap-y-20">
+        <div className="flex items-center justify-center gap-x-20 max-md:flex-col max-md:gap-y-20">
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
@@ -57,12 +57,12 @@ const Despre = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className="text-[20px] text-center my-14"
+          className="my-14 text-center text-[20px]"
         >
           Făcătoarea de minuni Edera Sierra vă poate ajuta în orice problemă
           dacă aveți speranță și încredere deplină. O să reușiți să treceți
           peste toate necazurile din viața dumneavoastră. Încă de la naștere{" "}
-          <span className="bg-accent p-[1px] rounded-sm text-white">
+          <span className="rounded-sm bg-accent p-[1px] text-white">
             am fost aleasă de Dumnezeu
           </span>{" "}
           și binecuvântată cu HAR SFÂNT, trimisă pentru a face bine. Edera
@@ -78,7 +78,7 @@ const Despre = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className="relative flex max-md:flex-col max-md:gap-y-4 items-center justify-center gap-x-10 underline decoration-4 underline-offset-8 decoration-accent mb-12 md:mb-32 "
+          className="relative mb-12 flex items-center justify-center gap-x-10 underline decoration-accent decoration-4 underline-offset-8 max-md:flex-col max-md:gap-y-4 md:mb-32"
         >
           <h2 className="max-md:text-center">Ghidul tău în lumea spirituală</h2>{" "}
           <Image
@@ -86,7 +86,7 @@ const Despre = () => {
             width={120}
             height={120}
             alt="Icon glob descriere"
-            className="md:absolute md:right-[40%] md:top-7 xl:right-[18%] xl:-top-9"
+            className="md:absolute md:right-[40%] md:top-7 xl:-top-9 xl:right-[18%]"
           />
         </motion.div>
       </div>
@@ -144,7 +144,7 @@ const Despre = () => {
           <p className="flex flex-col items-start gap-y-2">
             <span className="mb-4">
               <span className="text-white">&#9679;</span>{" "}
-              <span className=" bg-accent px-1 font-semibold text-white rounded-sm">
+              <span className="rounded-sm bg-accent px-1 font-semibold text-white">
                 Ce poți aștepta:
               </span>{" "}
             </span>
@@ -154,7 +154,7 @@ const Despre = () => {
           </p>
           <Link
             href="/despre-mine"
-            className="hover:text-accent hover:font-bold text-xl transition-all ease-in-out duration-500 hover"
+            className="hover text-xl transition-all duration-500 ease-in-out hover:font-bold hover:text-accent"
           >
             <span>Mai multe...</span>
           </Link>

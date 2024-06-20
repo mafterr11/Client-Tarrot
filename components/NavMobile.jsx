@@ -41,7 +41,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
           isMenuOpen ? "right-0" : "-right-full"
         } fixed bottom-0 top-0 z-50 h-screen w-full border-l-2 border-accent bg-[#191919] px-8 transition-all duration-500`}
       >
-        <div className="flex h-full flex-col items-center justify-between text-white pt-12">
+        <div className="flex h-full flex-col items-center justify-between pt-12 text-white">
           {/* close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
@@ -77,7 +77,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
           </div>
           {/* bottom part */}
           <div className="flex items-center justify-center gap-x-7 pb-8">
-            <Socials containerStyles="flex-col gap-y-2"/>
+            <Socials containerStyles="flex-col gap-y-2" />
           </div>
         </div>
       </aside>

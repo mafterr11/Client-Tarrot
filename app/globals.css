@@ -18,7 +18,7 @@
   }
 
   h1 {
-    @apply text-[26px]  font-bold md:text-[32px] lg:text-[37px] xl:text-[55px] xl:leading-[85px] 2xl:text-[65px];
+    @apply text-[26px] font-bold md:text-[32px] lg:text-[37px] xl:text-[55px] xl:leading-[85px] 2xl:text-[65px];
   }
   h2 {
     @apply text-[25px] font-medium md:text-[27px] lg:text-[34px] xl:text-[38px] 2xl:text-[40px];
@@ -59,7 +59,7 @@
   width: 0px;
   height: 4px;
   display: block;
-  background: #F3D66D;
+  background: #f3d66d;
   transition: 300ms;
 }
 
@@ -83,7 +83,7 @@
   width: 0px;
   height: 2px;
   display: block;
-  background: #F3D66D;
+  background: #f3d66d;
   transition: 300ms;
 }
 
@@ -93,6 +93,6 @@
 
 .active-link {
   text-decoration: underline;
-  text-decoration-color: #F3D66D;
+  text-decoration-color: #f3d66d;
   text-decoration-thickness: 4px;
 }

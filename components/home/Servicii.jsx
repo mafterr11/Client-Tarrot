@@ -6,15 +6,15 @@ import { motion } from "framer-motion";
 
 const Servicii = () => {
   return (
-    <section className="text-white py-24 px-4 flex flex-col md:flex-row items-start justify-evenly container max-md:gap-y-5">
+    <section className="container flex flex-col items-start justify-evenly px-4 py-24 text-white max-md:gap-y-5 md:flex-row">
       <motion.div
         variants={fadeIn("down", 0.4)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, ammount: 0.6 }}
       >
-        <h2 className="text-2xl font-bold mb-6">Probleme tratate de ea:</h2>
-        <ul className="list-none space-y-4 text-lg ">
+        <h2 className="mb-6 text-2xl font-bold">Probleme tratate de ea:</h2>
+        <ul className="list-none space-y-4 text-lg">
           <li className="flex items-center gap-x-3">
             <CheckCheck color="#e4b373" /> Dezleagă farmece
           </li>
@@ -70,18 +70,18 @@ const Servicii = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, ammount: 0.6 }}
-        className="mt-8 md:mt-0 flex flex-col items-center"
+        className="mt-8 flex flex-col items-center md:mt-0"
       >
-        <h3 className="text-xl font-bold mb-4">
+        <h3 className="mb-4 text-xl font-bold">
           Contactează-mă în privat si haide sa colaborăm!
         </h3>
         <a
           href="tel:+40727585558"
           target="blank"
-          className="flex self-start items-center justify-center gap-x-2 mb-4"
+          className="mb-4 flex items-center justify-center gap-x-2 self-start"
         >
           <PhoneCallIcon size={24} /> Telefon:{" "}
-          <span className="text-accent font-bold">+40 727 585 558</span>
+          <span className="font-bold text-accent">+40 727 585 558</span>
         </a>
         <img
           src="/8.jpg"

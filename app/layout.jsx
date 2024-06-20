@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} overflow-x-hidden bg-gradient-to-b from-[#91221E] to-[#030202]  `}
+        className={`${roboto.className} overflow-x-hidden bg-gradient-to-b from-[#91221E] to-[#030202]`}
       >
         <Header />
         {children}
