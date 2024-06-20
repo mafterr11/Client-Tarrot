@@ -54,7 +54,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             <Logo source={"/header-mobile2.png"} size={"h-[3.75rem]"} />
           </div>
           {/* links */}
-          <div className="flex flex-col gap-y-12">
+          <div className="flex flex-col gap-y-8 xs:gap-y-12">
             {links.map((link, index) => {
               return (
                 <Link
