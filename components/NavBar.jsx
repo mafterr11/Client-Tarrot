@@ -28,7 +28,7 @@ const NavBar = ({ linkStyles, containerStyles }) => {
             href={link.path}
             className={`${linkStyles} ${
               currentRoute === link.path
-                ? "font-semibold underline decoration-accent decoration-4 underline-offset-[1.6rem] active-link"
+                ? "font-semibold underline decoration-accent decoration-4 underline-offset-[1rem] active-link"
                 : "hover"
             } text-base`}
           >

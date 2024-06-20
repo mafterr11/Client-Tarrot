@@ -5,7 +5,7 @@ import { fadeIn } from "@/variants";
 
 const Intro = () => {
   return (
-    <div className="mb-12 xl:mb-24">
+    <div className="mb-12 xl:mb-24 max-md:mt-[7.6rem] mt-[7.7rem]">
       <div className="relative h-64 w-full overflow-hidden xl:h-[28rem]">
         <Image
           src="/contact.jpg"
@@ -24,11 +24,10 @@ const Intro = () => {
         >
           <div className="flex flex-col items-start justify-center space-x-0 text-4xl font-bold text-white xl:flex-row xl:justify-start xl:space-x-2">
             <span className="inline-block tracking-wide">Astromagia</span>
-            <span className="inline-block tracking-wide text-accent">Edera</span>
-            <span className="inline-block tracking-wide text-accent"> Sierra</span>
+            <span className="inline-block tracking-wide text-accent">Edera Sierra</span>
           </div>
 
-          <h3 className="flex flex-row items-center justify-center text-xl font-normal text-white/80 xl:text-2xl">
+          <h3 className="flex flex-row items-center justify-center text-xl font-normal text-white/80 xl:text-2xl max-md:text-center">
           Nu ai găsit răspunsul?  Ia legătura cu mine chiar acum! 
           </h3>
         </motion.div>

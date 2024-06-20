@@ -8,7 +8,7 @@ import { fadeIn } from "@/variants";
 
 const Hero = () => {
   return (
-    <section className="relative flex h-screen w-screen flex-col items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-xl:justify-center xl:flex-row border-b-2 border-accent">
+    <section className="mt-[6.7rem] relative flex h-screen w-screen flex-col items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-xl:justify-center xl:flex-row border-b-2 border-accent">
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black/65" />
 

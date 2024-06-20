@@ -4,7 +4,7 @@ import Link from "next/link";
 import { RiYoutubeLine } from "react-icons/ri";
 import { RiWhatsappLine } from "react-icons/ri";
 import { BiPhone } from "react-icons/bi";
-const Socials = ({ containerStyles }) => {
+const Socials = ({ containerStyles}) => {
   return (
     <div
       className={`${containerStyles} xs:text-2xl flex items-start gap-x-5 text-[1.7rem] lg:text-3xl xl:text-2xl`}

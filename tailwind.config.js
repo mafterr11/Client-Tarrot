@@ -27,7 +27,7 @@ module.exports = {
         }
       },
       backgroundImage: {
-        hero: "url('/hero.jpg')",
+        hero: "url('/bg2.jpg')",
       },
       keyframes: {
         "accordion-down": {
