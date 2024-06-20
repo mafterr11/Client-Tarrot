@@ -1,11 +1,20 @@
+"use client"
 import Socials from "@/components/Socials";
 import React from "react";
+import { fadeIn } from "@/variants";
+import { motion } from "framer-motion";
 
 const ContactInfo = () => {
   return (
-    <section className="pb-20 md:container grid grid-cols-1 xl:grid-cols-2 ">
+    <section className="pb-20 xl:container grid grid-cols-1 xl:grid-cols-2 ">
       {/* CONTACT INFO */}
-      <div className="text-white  px-4 flex flex-col items-center">
+      <motion.div
+        variants={fadeIn("down", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, ammount: 0.4 }}
+        className="text-white px-4 flex flex-col items-center"
+      >
         <div className="mb-6  text-center">
           <h3 className="mb-2">Astromagia Edera Sierra</h3>
           <p className="text-lg mb-2">
@@ -32,14 +41,22 @@ const ContactInfo = () => {
             className="w-full rounded-lg shadow-lg"
           />
         </div>
-      </div>
+      </motion.div>
       {/* FORM */}
-      <div className="flex flex-col items-center">
-        <h3 className="mb-20 max-md:mb-12 max-md:mt-14">Lasati-mi un mesaj oricand!</h3>
+      <motion.div
+        variants={fadeIn("down", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, ammount: 0.6 }}
+        className="flex flex-col items-center"
+      >
+        <h3 className="mb-20 max-md:mb-12 max-xl:mt-14">
+          Lasati-mi un mesaj oricand!
+        </h3>
         <form
           action="https://formsubmit.co/ab707de94e073d0149749f3bd27b300e "
           method="POST"
-          className="w-[95%] xl:w-[500px]"
+          className="w-[95%] md:w-[500px]"
           name="Solicitare noua de la un client"
         >
           <div className="mb-4 xl:mb-10">
@@ -50,7 +67,7 @@ const ContactInfo = () => {
               type="text"
               id="nume"
               name="name"
-              className="w-full px-3 py-2 border-gray-300 rounded-lg bg-accent/15 focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border border-accent/50 rounded-lg bg-accent/15 focus:outline-none focus:border-accent"
               required
             />
           </div>
@@ -62,7 +79,7 @@ const ContactInfo = () => {
               type="email"
               id="email"
               name="email"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-accent/15 focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border border-accent/50 rounded-lg bg-accent/15 focus:outline-none focus:border-accent"
               required
             />
           </div>
@@ -74,7 +91,7 @@ const ContactInfo = () => {
               type="tel"
               id="phone"
               name="phone"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-accent/15 focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border border-accent/50 rounded-lg bg-accent/15 focus:outline-none focus:border-accent"
               required
             />
           </div>
@@ -86,20 +103,20 @@ const ContactInfo = () => {
               id="mesaj"
               name="message"
               rows="4"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-accent/15 focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border border-accent/50 rounded-lg bg-accent/15 focus:outline-none focus:border-accent"
               required
             ></textarea>
           </div>
           <div>
             <button
               type="submit"
-              className="w-full bg-accent text-white font-semibold px-4 py-2 rounded-lg hover:bg-accent-light transition-all ease-in-out duration-500"
+              className="w-full bg-accent text-black font-semibold px-4 py-2 rounded-lg hover:bg-accent-light transition-all ease-in-out duration-500"
             >
               Trimite
             </button>
           </div>
         </form>
-      </div>
+      </motion.div>
     </section>
   );
 };

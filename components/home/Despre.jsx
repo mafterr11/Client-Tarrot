@@ -9,30 +9,56 @@ const Despre = () => {
     <section className="w-[95%] mx-auto md:container py-[5rem] md:py-[8rem] md:max-xl:max-w-[90%] overflow-x-hidden">
       {/* Under hero */}
       <div>
-        <p className="text-[25px] text-center mb-14">
+        <motion.p
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, ammount: 0.4 }}
+          className="text-[25px] text-center mb-14"
+        >
           Edera Sierra este{" "}
           <span className="text-white bg-accent p-[1px] rounded-sm">
             singura cu adevărat acceptată de BISERICĂ
           </span>{" "}
           pentru a dezlega oamenii de farmece și blesteme.
-        </p>
+        </motion.p>
         <div className="flex items-center justify-center max-md:flex-col gap-x-20 max-md:gap-y-20">
-          <Image
-            src="/7.jpg"
-            width={500}
-            height={500}
-            alt="hero image"
-            className="rounded-md"
-          />
-          <Image
-            src="/10.jpg"
-            width={500}
-            height={500}
-            alt="hero image"
-            className="rounded-md"
-          />
+          <motion.div
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, ammount: 0.4 }}
+          >
+            <Image
+              src="/7.jpg"
+              width={500}
+              height={500}
+              alt="hero image"
+              className="rounded-md"
+            />
+          </motion.div>
+          <motion.div
+            variants={fadeIn("down", 0.6)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, ammount: 0.4 }}
+          >
+            <Image
+              src="/10.jpg"
+              width={500}
+              height={500}
+              alt="hero image"
+              className="rounded-md"
+            />
+          </motion.div>
         </div>
-        <p className="text-[20px] text-center my-14">
+        <motion.p
+          variants={fadeIn("down", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, ammount: 0.4 }}
+          className="text-[20px] text-center my-14"
+        >
           Făcătoarea de minuni Edera Sierra vă poate ajuta în orice problemă
           dacă aveți speranță și încredere deplină. O să reușiți să treceți
           peste toate necazurile din viața dumneavoastră. Încă de la naștere{" "}
@@ -43,8 +69,9 @@ const Despre = () => {
           Sierra este singura tămăduitoare din lume ce deține CARTEA MAGIEI
           ALBE, care conține cele mai puternice descântece pentru dragoste,
           noroc, sănătate și dezlegări de farmece, vrăji și blesteme.
-        </p>
+        </motion.p>
       </div>
+      {/* Rest of DESPRE */}
       <div>
         <motion.div
           variants={fadeIn("down", 0.4)}
@@ -53,13 +80,13 @@ const Despre = () => {
           viewport={{ once: true, ammount: 0.4 }}
           className="relative flex max-md:flex-col max-md:gap-y-4 items-center justify-center gap-x-10 underline decoration-4 underline-offset-8 decoration-accent mb-12 md:mb-32 "
         >
-          <h2 className="max-md:text-center">Ghidul Tău în Lumea Spirituală</h2>{" "}
+          <h2 className="max-md:text-center">Ghidul tău în lumea spirituală</h2>{" "}
           <Image
             src="/globe.png"
             width={120}
             height={120}
             alt="Icon glob descriere"
-            className="md:absolute right-[18%] -top-9"
+            className="md:absolute md:right-[40%] md:top-7 xl:right-[18%] xl:-top-9"
           />
         </motion.div>
       </div>

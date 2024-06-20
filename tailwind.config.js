@@ -13,13 +13,16 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
+        xs: "390px",
         "2xl": "1400px",
       },
     },
     extend: {
       colors: {
         accent: {
-          DEFAULT: "#e4b373",
+          // e4b373
+          // F7EDBD
+          DEFAULT: "#F3D66D",
           light: "#E4B373CC",
         },
         background: {
@@ -29,6 +32,7 @@ module.exports = {
       backgroundImage: {
         hero: "url('/4.jpg')",
         CTA: "url('/6.jpg')",
+        contact: "url('/9.jpg')",
       },
       keyframes: {
         "accordion-down": {

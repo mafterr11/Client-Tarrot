@@ -6,14 +6,7 @@ import { fadeIn } from "@/variants";
 const Intro = () => {
   return (
     <div className="mb-12 xl:mb-24 max-md:mt-[7.6rem] mt-[7.7rem]">
-      <div className="relative h-64 w-full overflow-hidden xl:h-[28rem]">
-        <Image
-          src="/contact.jpg"
-          alt="Imagine intro sectiune contact"
-          fill
-          priority={true}
-          className="object-cover"
-        />
+      <div className="relative bg-contact bg-no-repeat bg-cover xl:bg-[top_-35rem_center]  h-[65vh] w-full overflow-hidden xl:h-[28rem]">
         <div className="absolute inset-0 border-b border-accent bg-black/60" />
         <motion.div
           variants={fadeIn("down", 0.2)}

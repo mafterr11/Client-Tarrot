@@ -31,7 +31,7 @@ const FAQ = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, ammount: 0.4 }}
-        className="container mx-auto px-0"
+        className="max-md:container xl:container mx-auto px-0"
       >
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">

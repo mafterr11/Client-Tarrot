@@ -59,7 +59,7 @@
   width: 0px;
   height: 4px;
   display: block;
-  background: #e4b373;
+  background: #F3D66D;
   transition: 300ms;
 }
 
@@ -83,7 +83,7 @@
   width: 0px;
   height: 2px;
   display: block;
-  background: #e4b373;
+  background: #F3D66D;
   transition: 300ms;
 }
 
@@ -93,6 +93,6 @@
 
 .active-link {
   text-decoration: underline;
-  text-decoration-color: #e4b373;
+  text-decoration-color: #F3D66D;
   text-decoration-thickness: 4px;
 }

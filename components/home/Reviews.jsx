@@ -31,13 +31,13 @@ const Reviews = () => {
       icon: "/reviews/laura.jpeg",
     },
     {
-      text: "Edera mi-a oferit soluții personalizate și m-a ajutat să depășesc problemele personale. Citirile de tarot și consilierea ei spirituală au fost de mare ajutor în momentele dificile. Sunt recunoscător pentru tot sprijinul și recomand cu încredere serviciile ei!",
+      text: "Edera mi-a oferit soluții personalizate și m-a ajutat să depășesc problemele personale. Citirile de tarot și consilierea ei spirituală au fost de mare ajutor în momentele dificile. Sunt recunoscător pentru tot sprijinul și recomand!",
       nume: "Vasile",
       icon: "/reviews/vasile.jpeg",
     },
   ];
   return (
-    <section className="container px-5 py-24 mx-auto">
+    <section className="max-md:px-0 max-md:container xl:container px-5 py-24 mx-auto">
       <motion.h2
         variants={fadeIn("down", 0.4)}
         initial="hidden"
@@ -45,9 +45,9 @@ const Reviews = () => {
         viewport={{ once: true, ammount: 0.4 }}
         className="text-center underline decoration-4 underline-offset-8 decoration-accent mb-32"
       >
-        Experiențe Transformatoare
+        Experiențe transformatoare
       </motion.h2>
-      <div className="grid grid-cols-1 xl:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         {testimonials.map((testimonial, index) => (
           <motion.div
             variants={fadeIn("down", 0.4)}
@@ -57,8 +57,9 @@ const Reviews = () => {
             className="p-4"
             key={index}
           >
+            {/* c08332 */}
             {/* 634319 */}
-            <div className="h-[430px] md:max-xl:w-[80%] md:max-xl:mx-auto bg-[#c08332] p-8 rounded grid grid-cols-subgrid hover:-translate-y-2 hover:scale-[1.02] transition-all ease-in-out duration-500">
+            <div className="h-[430px] md:max-xl:w-full md:max-xl:mx-auto bg-[#b1983f] p-8 rounded grid grid-cols-subgrid hover:-translate-y-2 hover:scale-[1.02] transition-all ease-in-out duration-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"

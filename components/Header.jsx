@@ -14,7 +14,7 @@ const Header = () => {
           <a
               href="tel:+40727585558"
               target="blank"
-              className="flex items-center justify-center gap-x-2 max-md:hidden"
+              className="flex items-center justify-center gap-x-2 max-xl:hidden"
             >
                <PhoneCallIcon size={24}/> Telefon: <span className="text-accent font-bold">+40 727 585 558</span>
             </a>

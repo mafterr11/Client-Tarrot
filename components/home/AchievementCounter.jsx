@@ -31,7 +31,7 @@ const AchievementCounter = () => {
             Experiența
           </div>
         </div>
-        <div >
+        <div className="max-md:pl-6">
           <div className="text-3xl lg:text-[2.8rem] mb-2">
             <CountUp start={0} end={inView ? 10584 : 0} duration={5} />+
           </div>
@@ -39,7 +39,7 @@ const AchievementCounter = () => {
             Clienți mulțumiți
           </div>
         </div>
-        <div >
+        <div className="max-md:pl-6">
           <div className="text-3xl lg:text-[2.8rem] mb-2">
             <CountUp start={0} end={inView ? 6 : 0} duration={5} />+
           </div>

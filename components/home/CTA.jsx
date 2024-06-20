@@ -7,7 +7,7 @@ import { fadeIn } from "@/variants";
 
 const CTA = () => {
   return (
-    <section className="relative mb-12 bg-CTA py-24 bg-fixed bg-[bottom_-32rem_center]">
+    <section className="relative mb-12 bg-CTA py-12 xs:py-24 bg-fixed bg-[bottom_-34rem_center] xl:bg-[bottom_-45rem_center] bg-no-repeat">
       <div className="bg-black/30 absolute inset-0"/>
       <div className="relative container mx-auto">
         <div className="flex flex-col items-center">
@@ -31,7 +31,7 @@ const CTA = () => {
             viewport={{ once: true, ammount: 0.4 }}
           >
             <Link href="/contact">
-              <Button className="gap-x-2 group">
+              <Button className="gap-x-2 group font-semibold">
                 Descoperă destinul{" "}
                 <Send
                   size={18}

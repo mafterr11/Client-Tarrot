@@ -8,9 +8,9 @@ import { fadeIn } from "@/variants";
 
 const Hero = () => {
   return (
-    <section className="mt-[6.7rem] relative flex h-screen w-screen flex-col items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-xl:justify-center xl:flex-row border-b-2 border-accent">
+    <section className="mt-[6.7rem] relative flex h-screen w-screen flex-col items-center justify-start bg-hero bg-cover bg-center xl:bg-[top_-34rem_center] bg-no-repeat max-xl:justify-center xl:flex-row border-b-2 border-accent">
       {/* Black overlay */}
-      <div className="absolute inset-0 bg-black/65" />
+      <div className="absolute inset-0 bg-black/45" />
 
       {/* Hero container */}
       <div className="relative z-30 max-xl:text-center max-xl:pt-20 xl:p-36">
@@ -40,7 +40,7 @@ const Hero = () => {
           viewport={{ once: true, ammount: 0.4 }}
         >
           <Link href="/despre">
-            <Button>
+            <Button className="font-semibold">
               <span>Află mai multe</span>
             </Button>
           </Link>
@@ -52,7 +52,7 @@ const Hero = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, ammount: 0.4 }}
-        className="z-30 hidden md:flex md:pt-24"
+        className="z-30 hidden xl:flex md:pt-24"
       >
         <Image
           src="/5.jpg"
