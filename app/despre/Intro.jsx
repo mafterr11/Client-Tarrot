@@ -5,7 +5,7 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <section className="mx-auto px-6 py-32 text-white max-md:container xl:container">
+    <section className="mx-auto px-6 py-32 text-white xl:container">
       <motion.h1
         variants={fadeIn("down", 0.2)}
         initial="hidden"
@@ -15,7 +15,7 @@ const Intro = () => {
       >
         Despre mine
       </motion.h1>
-      <div className="">
+      <div>
         <div className="text-center">
           <motion.h5
             variants={fadeIn("down", 0.4)}
