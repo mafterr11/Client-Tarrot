@@ -16,7 +16,7 @@ const Footer = () => {
           </h4>
         </Link>
         {/* Socials */}
-        <Socials containerStyles="flex-col" />
+        <Socials containerStyles="flex-col gap-y-3" />
         {/* Copyright */}
         <div className="inset-x-0 my-2 flex flex-col items-center justify-center gap-x-1 text-center xl:absolute">
           <span>
