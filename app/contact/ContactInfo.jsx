@@ -57,8 +57,9 @@ const ContactInfo = () => {
           action="https://formsubmit.co/ab707de94e073d0149749f3bd27b300e "
           method="POST"
           className="w-[95%] md:w-[500px]"
-          name="Solicitare noua de la un client"
         >
+          <input type="hidden" name="_next" value="https://edera-sierra.vercel.app"></input>
+          <input type="hidden" name="_subject" value="Solicitare noua de la client"></input>
           <div className="mb-4 xl:mb-10">
             <label htmlFor="nume" className="mb-2 block font-semibold">
               Nume
@@ -66,7 +67,7 @@ const ContactInfo = () => {
             <input
               type="text"
               id="nume"
-              name="name"
+              name="Nume"
               className="w-full rounded-lg border border-accent/50 bg-accent/15 px-3 py-2 focus:border-accent focus:outline-none"
               required
             />
@@ -78,7 +79,7 @@ const ContactInfo = () => {
             <input
               type="email"
               id="email"
-              name="email"
+              name="Email"
               className="w-full rounded-lg border border-accent/50 bg-accent/15 px-3 py-2 focus:border-accent focus:outline-none"
               required
             />
@@ -90,7 +91,7 @@ const ContactInfo = () => {
             <input
               type="tel"
               id="phone"
-              name="phone"
+              name="Telefon"
               className="w-full rounded-lg border border-accent/50 bg-accent/15 px-3 py-2 focus:border-accent focus:outline-none"
               required
             />
@@ -101,7 +102,7 @@ const ContactInfo = () => {
             </label>
             <textarea
               id="mesaj"
-              name="message"
+              name="Mesaj"
               rows="4"
               className="w-full rounded-lg border border-accent/50 bg-accent/15 px-3 py-2 focus:border-accent focus:outline-none"
               required
