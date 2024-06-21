@@ -21,6 +21,7 @@ const ContactInfo = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // TODO schimba emailul cu cel al clientei
     const mailtoLink = `mailto:example@example.com?subject=Solicitare noua de la ${formData.Nume}&body=Nume: ${formData.Nume}%0AEmail: ${formData.Email}%0ATelefon: ${formData.Telefon}%0AMesaj: ${formData.Mesaj}`;
     window.open(mailtoLink, '_blank');
   };
