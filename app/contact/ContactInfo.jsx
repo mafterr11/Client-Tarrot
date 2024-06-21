@@ -1,10 +1,30 @@
 "use client";
 import Socials from "@/components/Socials";
-import React from "react";
+import React, { useState } from "react";
 import { fadeIn } from "@/variants";
 import { motion } from "framer-motion";
 
 const ContactInfo = () => {
+  const [formData, setFormData] = useState({
+    Nume: '',
+    Email: '',
+    Telefon: '',
+    Mesaj: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const mailtoLink = `mailto:example@example.com?subject=Solicitare noua de la ${formData.Nume}&body=Nume: ${formData.Nume}%0AEmail: ${formData.Email}%0ATelefon: ${formData.Telefon}%0AMesaj: ${formData.Mesaj}`;
+    window.open(mailtoLink, '_blank');
+  };
+
   return (
     <section className="grid grid-cols-1 pb-20 xl:container xl:grid-cols-2">
       {/* CONTACT INFO */}
@@ -54,12 +74,9 @@ const ContactInfo = () => {
           Lasati-mi un mesaj oricand!
         </h3>
         <form
-          action="https://formsubmit.co/ab707de94e073d0149749f3bd27b300e "
-          method="POST"
+          onSubmit={handleSubmit}
           className="w-[95%] md:w-[500px]"
         >
-          <input type="hidden" name="_next" value="https://edera-sierra.vercel.app"></input>
-          <input type="hidden" name="_subject" value="Solicitare noua de la client"></input>
           <div className="mb-4 xl:mb-10">
             <label htmlFor="nume" className="mb-2 block font-semibold">
               Nume
@@ -70,6 +87,8 @@ const ContactInfo = () => {
               name="Nume"
               className="w-full rounded-lg border border-accent/50 bg-accent/15 px-3 py-2 focus:border-accent focus:outline-none"
               required
+              value={formData.Nume}
+              onChange={handleChange}
             />
           </div>
           <div className="mb-4 xl:mb-10">
@@ -82,6 +101,8 @@ const ContactInfo = () => {
               name="Email"
               className="w-full rounded-lg border border-accent/50 bg-accent/15 px-3 py-2 focus:border-accent focus:outline-none"
               required
+              value={formData.Email}
+              onChange={handleChange}
             />
           </div>
           <div className="mb-4 xl:mb-10">
@@ -94,6 +115,8 @@ const ContactInfo = () => {
               name="Telefon"
               className="w-full rounded-lg border border-accent/50 bg-accent/15 px-3 py-2 focus:border-accent focus:outline-none"
               required
+              value={formData.Telefon}
+              onChange={handleChange}
             />
           </div>
           <div className="mb-4 xl:mb-10">
@@ -106,6 +129,8 @@ const ContactInfo = () => {
               rows="4"
               className="w-full rounded-lg border border-accent/50 bg-accent/15 px-3 py-2 focus:border-accent focus:outline-none"
               required
+              value={formData.Mesaj}
+              onChange={handleChange}
             ></textarea>
           </div>
           <div>
