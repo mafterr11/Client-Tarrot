@@ -73,7 +73,7 @@ const Servicii = () => {
         className="mt-8 flex flex-col items-center md:mt-0"
       >
         <h3 className="mb-4 text-xl font-bold">
-          Contactează-mă în privat si haide sa colaborăm!
+          Împreună vom descoperi puterea tainică a magiei <br />Contactează-mă!
         </h3>
         <a
           href="tel:+40727585558"
