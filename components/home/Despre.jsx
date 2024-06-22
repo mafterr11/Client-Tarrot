@@ -22,6 +22,26 @@ const Despre = () => {
           </span>{" "}
           pentru a dezlega oamenii de farmece și blesteme.
         </motion.p>
+        <motion.h2
+          variants={fadeIn("down", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, ammount: 0.4 }}
+          className="mb-2 text-3xl font-bold text-center"
+        >
+          <span className="text-accent">ATESTATĂ</span> și{" "}
+          <span className="text-accent">ACREDITATĂ</span> în domeniul
+          CLARVIZIUNII VRĂJITORIEI și PARAPSIHOLOGIEI
+        </motion.h2>
+        <motion.h5
+          variants={fadeIn("down", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, ammount: 0.4 }}
+          className="text-center mb-12"
+        >
+          Vă pot oferi bon fiscal
+        </motion.h5>
         <div className="flex items-center justify-center gap-x-20 max-md:flex-col max-md:gap-y-20">
           <motion.div
             variants={fadeIn("down", 0.4)}

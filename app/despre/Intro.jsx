@@ -17,35 +17,16 @@ const Intro = () => {
       </motion.h1>
       <div>
         <div className="text-center">
-          <motion.h5
-            variants={fadeIn("down", 0.4)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, ammount: 0.4 }}
-          >
-            Vă pot oferi bon fiscal
-          </motion.h5>
-          <motion.h2
-            variants={fadeIn("down", 0.6)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, ammount: 0.4 }}
-            className="mb-6 text-3xl font-bold"
-          >
-            <span className="text-accent">ATESTATĂ</span> și{" "}
-            <span className="text-accent">ACREDITATĂ</span> în domeniul
-            CLARVIZIUNII VRĂJITORIEI și PARAPSIHOLOGIEI
-          </motion.h2>
-          <motion.p
+          <motion.h4
             variants={fadeIn("down", 0.8)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="mb-14 text-lg"
+            className="mb-14"
           >
             Vă ofer consultație și tarot pentru a vă lumina calea spre bine cu
             informații din trecut, prezent și viitor
-          </motion.p>
+          </motion.h4>
           <motion.p
             variants={fadeIn("down", 1)}
             initial="hidden"
